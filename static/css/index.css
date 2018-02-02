@@ -1,0 +1,155 @@
+/* reset */
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    transition: background-color .5s;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #e9e9e9;
+}
+::-webkit-scrollbar-thumb {
+    background: #999;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #999;
+}
+
+/* 通用 */
+.layout-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.layout-body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.layout-side {
+    width: 300px;
+    height: 100%;
+}
+.layout-content {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    right: 0;
+    bottom: 0;
+}
+
+/* 头部 */
+.header-tab .nav-item {
+    float: left;
+}
+.header-tab .nav-link {
+    padding: 10px 20px;
+    color: #f1f1f1;
+    font-size: 14px;
+}
+.header-tab .nav-item.active .nav-link {
+    color: #2a579a;
+    background-color: #f1f1f1;
+}
+
+/* */
+.eEditor-menu-container {
+    background-color: transparent;
+}
+.eEditor-container {
+    padding: 0 0px;
+    min-height: 100%;
+    margin: 0px auto;
+    background-color: transparent;
+}
+.eEditor-txt {
+    height: 100%;
+    font-size: 16px;
+}
+.eEditor-txt h1,
+.eEditor-txt h2,
+.eEditor-txt h3,
+.eEditor-txt h4,
+.eEditor-txt h5,
+.eEditor-txt h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+.eEditor-txt h1,
+.eEditor-txt h2,
+.eEditor-txt h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.eEditor-txt h4,
+.eEditor-txt h5,
+.eEditor-txt h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.eEditor-txt h1 {
+    font-size: 36px;
+}
+.eEditor-txt h2 {
+    font-size: 30px;
+}
+.eEditor-txt h3 {
+    font-size: 24px;
+}
+.eEditor-txt h4 {
+    font-size: 18px;
+}
+.eEditor-txt h5 {
+    font-size: 14px;
+}
+.eEditor-txt h6 {
+    font-size: 12px;
+}
+.eEditor-txt ol,
+.eEditor-txt ul {
+    padding-left: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.eEditor-txt li {
+    line-height: 1.42857143;
+}
+
+.eEditor-txt ul {
+    list-style-type: disc !important;
+}
+.eEditor-txt ul li {
+    list-style-type: disc !important;
+}
+.eEditor-txt ol,
+.eEditor-txt ol li {
+    list-style-type: decimal !important;
+}
+
+#editor-trigger {
+    height: 500px !important;
+    /*max-height: 500px;*/
+}
+
+/* 黑色主题 */
+.theme-dark {
+    color: #D6DBDF;
+    background-color: #444;;
+}
+.theme-dark .eEditor-container {
+    /*color: #fff;*/
+}
+.theme-dark .eEditor-menu-container {
+    /*color: #fff;*/
+}

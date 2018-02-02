@@ -1,0 +1,335 @@
+@import "var";
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: #e6e6e6;
+    overflow: hidden;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #e9e9e9;
+}
+::-webkit-scrollbar-thumb {
+    background: #999;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #999;
+}
+
+/* 通用 */
+.layout-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: $primary;
+    border-bottom: 1px solid #ccc;
+}
+.layout-body {
+    position: absolute;
+    top: 135px;
+    bottom: 0;
+    width: 100%;
+}
+.layout-side {
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid #aaa;
+}
+.layout-content {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    right: 0;
+    bottom: 0;
+}
+
+/* 头部 */
+.header-tab .nav-item {
+    float: left;
+}
+.header-tab .nav-link {
+    padding: 10px 20px;
+    color: #f1f1f1;
+    font-size: 14px;
+}
+.header-tab .nav-item.active .nav-link {
+    color: #2a579a;
+    background-color: #f1f1f1;
+}
+
+.mycontent {
+    height: 108px;
+    padding: 4px;
+    background-color: #f1f1f1;
+}
+
+/* 加载框 */
+.loading-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    display: none;
+    width: 400px;
+    height: 200px;
+    padding: 60px 16px 16px 16px;
+    background-color: #2a579a;
+}
+.loading-box .office {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: #fff;
+    font-size: 16px;
+}
+.loading-box .word {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+}
+.loading-box .start {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: #ccc;
+}
+
+
+/* */
+.wangEditor-container {
+    width: 1000px;
+    padding: 60px 40px;
+    min-height: 500px;
+    margin: 50px auto;
+}
+.wangEditor-txt {
+    height: 100%;
+}
+
+.wangEditor-txt h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+#editor-trigger {
+    height: 400px;
+    padding-top: 10px;
+    /*max-height: 500px;*/
+}
+
+/* */
+.operate {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100000;
+    display: none;
+    background-color: #f1f1f1;
+}
+.operate-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 256px;
+    padding-top: 16px;
+    background-color: #2a579a;
+}
+.operate .icon-back {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 36px;
+    margin-bottom: 16px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+.operate-tab {
+    width: 100%;
+}
+.operate-tab .nav-item {
+}
+.operate-tab .nav-item:hover {
+    background-color: #1a478a;
+}
+.operate-tab .nav-item.active {
+    background-color: #3d6bc1;
+}
+.operate-tab .nav-link {
+    padding: 16px 36px;
+    color: #fff;
+}
+.operate-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 256px;
+    bottom: 0;
+    padding: 40px;
+}
+.operate-content .title {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+/**/
+.mycontent {
+    background-color: #eee;
+    overflow: hidden;
+}
+
+/**/
+.template-list {
+    width: 900px;
+}
+.template-list .item {
+    float: left;
+    height: 200px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.template-list .image {
+    float: left;
+    width: 150px;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.template-list .text {
+}
+
+
+/* 工具栏 */
+.box-tool {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin-right: 15px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+.box-tool .box-title {
+    text-align: center;
+}
+.box-tool .box-body {
+    padding: 10px;
+}
+.btn-tool {
+    background-color: #09c;
+}
+/*
+ppt:#b8462b
+excel:#217345
+*/
+.mark-box {
+    display: none;
+    width: 900px;
+    height: 500px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-top: none;
+}
+.mark-tab {
+    margin-bottom: 10px;
+}
+.mark-tab .nav-item {
+    float: left;
+}
+.mark-tab .nav-link {
+    padding: 5px 8px;
+    color: #999;
+}
+.mark-tab .nav-item.active .nav-link {
+    color: #09c;
+}
+.mark-list {
+    padding: 10px;
+}
+.mark-list span {
+    display: inline-block;
+    width: 40px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+/**/
+.template-doc-list {
+    display: none;
+}
+
+@keyframes fadeInRightSmall {
+    from {
+        opacity: 0;
+        transform: translate3d(-100px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRightSmall {
+    animation-name: fadeInRightSmall;
+}
+
+/* 颜色选择器 */
+.fui-panel-content {
+    display: none;
+    width: 200px;
+    border: 1px solid #d3d3d3;
+}
+.fui-colorpicker-toolbar {
+    padding: 4px;
+    overflow: hidden;
+}
+.fui-panel-content .btn-clear {
+    display: inline-block;
+    float: left;
+}
+.fui-colorpicker-preview {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #f00;
+}
+.fui-colorpicker-clear {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #fff;
+}
+.fui-colorpicker-title {
+    background: #eee;
+    padding: 2px 4px;
+}
+.fui-colorpicker-commoncolor,
+.fui-colorpicker-standardcolor {
+    padding: 4px;
+}
+.fui-colorpicker-colors {
+
+}
+.fui-colorpicker-item {
+    display: inline-block;
+    margin: 0 2px;
+    width: 13px;
+    height: 13px;
+}
+
+/**/
